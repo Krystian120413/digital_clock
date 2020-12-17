@@ -1,6 +1,6 @@
 const color = (st) => {
     for(let i = 0; i < st.length; i++){
-        st[i].style.backgroundColor = "rgb(19, 9, 114)";
+        st[i].style.backgroundColor = "rgb(255, 255, 0)";
     }
 }
 
@@ -50,7 +50,7 @@ const timer = () => {
     const secondMulti = multi(today.getSeconds());
 
     for(let w = 0; w < document.getElementsByClassName("eight").length; w++){
-        document.getElementsByClassName("eight")[w].style.backgroundColor = "rgb(255, 54, 54)";
+        document.getElementsByClassName("eight")[w].style.backgroundColor = "rgb(120, 110, 110)";
     }
 
     color(document.getElementById("hourMulti").getElementsByClassName(count(hourMulti)));
