@@ -39,37 +39,6 @@ const count = (number) =>{
     return name;
 }
 
-let tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-
-let firstScriptTag = document.getElementsByTagName('script')[0];
-
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-let player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: '__oO8CP-t_g',
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
-
-function onPlayerReady(event) {
-    event.target.seekTo(40, allowSeekAhead=true);
-    }
-
-function onPlayerStateChange(event) {
-    event.target.playVideo();
-    event.target.setVolume(50);
-}
-
 const timer = () => {
     const today = new Date();
 
@@ -92,4 +61,26 @@ const timer = () => {
     color(document.getElementById("secondUni").getElementsByClassName(count(secondUni)));
 
     setTimeout("timer()", 1000);
+}
+
+let music = new Audio(src="1.wav");
+func = () => {
+    document.getElementById("play").style.background="rgb(80,80,80)";
+    document.getElementById("play").style.color="rgb(200,80,80)";
+    document.getElementById("play").style.width="340px";
+    document.getElementById("play").style.cursor="default";
+    document.getElementById("play").onClick="this.disabled=true";
+    document.getElementById("play").value="Muzyka jest odtwarzana";
+    music.volume = 0.3;
+    music.play();
+    setTimeout("musicEnded()", music.duration*1000+150);
+}
+
+function musicEnded() {
+    document.getElementById("play").style.background=null;
+    document.getElementById("play").style.color=null;
+    document.getElementById("play").style.width=null;
+    document.getElementById("play").style.cursor=null;
+    document.getElementById("play").onClick="this.disabled=false";
+    document.getElementById("play").value="Włącz muzykę";
 }
