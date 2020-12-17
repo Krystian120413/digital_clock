@@ -1,9 +1,5 @@
 
 const color = (st) => {
-    for(let w = 0; w < document.getElementsByClassName("eight").length; w++){
-        document.getElementsByClassName("eight")[w].style.backgroundColor = " rgb(199, 52, 52)";
-    }
-
     for(let i = 0; i < st.length; i++){
         st[i].style.backgroundColor = "rgb(19, 9, 114)";
     }
@@ -58,6 +54,10 @@ const timer = () => {
     const minuteMulti = multi(today.getMinutes());
     const secondUni = unitude(today.getSeconds());
     const secondMulti = multi(today.getSeconds());
+
+    for(let w = 0; w < document.getElementsByClassName("eight").length; w++){
+        document.getElementsByClassName("eight")[w].style.backgroundColor = " rgb(199, 52, 52)";
+    }
 
     color(document.getElementById("hourMulti").getElementsByClassName(count(hourMulti)));
     color(document.getElementById("hourUni").getElementsByClassName(count(hourUni)));
