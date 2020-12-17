@@ -1,4 +1,3 @@
-
 const color = (st) => {
     for(let i = 0; i < st.length; i++){
         st[i].style.backgroundColor = "rgb(19, 9, 114)";
