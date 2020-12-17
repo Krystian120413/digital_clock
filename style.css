@@ -20,45 +20,45 @@ body {
     }
 
 
-    #a {
-        top: 0;
-        left: 10px;
-    }
+        #a {
+            top: 0;
+            left: 10px;
+        }
 
-    #b {
-        top: 40px;
-        left: 60px;
-        transform: rotate(90deg);
-    }
+        #b {
+            top: 40px;
+            left: 60px;
+            transform: rotate(90deg);
+        }
 
-    #c {
-        top: 120px;
-        left: 60px;
-        transform: rotate(90deg);
-    }
+        #c {
+            top: 120px;
+            left: 60px;
+            transform: rotate(90deg);
+        }
 
-    #d {
-        top: 160px;
-        left: 10px;
-    }
+        #d {
+            top: 160px;
+            left: 10px;
+        }
 
-    #e {
-        top: 80px;
-        left: -40px;
-        transform: rotate(90deg);
-    }
+        #e {
+            top: 80px;
+            left: -40px;
+            transform: rotate(90deg);
+        }
 
-    #f {
-        top: -40px;
-        left: -40px;
-        transform: rotate(90deg);
-    }
+        #f {
+            top: -40px;
+            left: -40px;
+            transform: rotate(90deg);
+        }
 
-    #g {
-        top: -10px;
-        left: 20px;
-        width: 80px;
-    }
+        #g {
+            top: -10px;
+            left: 20px;
+            width: 80px;
+        }
 
         .module {
             /*background-color: rgb(19, 9, 114);*/
