@@ -60,14 +60,15 @@ function onYouTubeIframeAPIReady() {
         }
     });
 }
-      function onPlayerReady(event) {
-        event.target.playVideo();
-    
-        player.seekTo(40, allowSeekAhead=true);
-      }
-      function onPlayerStateChange(event) {
-          player.setVolume(20);
-      }
+
+function onPlayerReady(event) {
+    event.target.seekTo(40, allowSeekAhead=true);
+    }
+
+function onPlayerStateChange(event) {
+    event.target.playVideo();
+    event.target.setVolume(50);
+}
 
 const timer = () => {
     const today = new Date();
