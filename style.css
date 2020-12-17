@@ -13,7 +13,7 @@ body {
 }
 
     .timer {
-        width: 120px;
+        width: 140px;
         height: 240px;
         background-color: red;
         display: inline-block;
@@ -22,41 +22,41 @@ body {
 
         #a {
             top: 0;
-            left: 10px;
+            left: 20px;
         }
 
         #b {
             top: 40px;
-            left: 60px;
+            left: 70px;
             transform: rotate(90deg);
         }
 
         #c {
             top: 120px;
-            left: 60px;
+            left: 70px;
             transform: rotate(90deg);
         }
 
         #d {
             top: 160px;
-            left: 10px;
+            left: 20px;
         }
 
         #e {
             top: 80px;
-            left: -40px;
+            left: -30px;
             transform: rotate(90deg);
         }
 
         #f {
             top: -40px;
-            left: -40px;
+            left: -30px;
             transform: rotate(90deg);
         }
 
         #g {
             top: -10px;
-            left: 20px;
+            left: 30px;
             width: 80px;
         }
 
@@ -66,4 +66,15 @@ body {
             height: 20px;
             border-radius: 10px;
             position: relative;
+        }
+
+        .space {
+            width: 30px;
+        }
+
+        circle {
+            background-color: rgb(107, 148, 11);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
         }

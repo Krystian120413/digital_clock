@@ -41,11 +41,6 @@ const count = (number) =>{
 
 const timer = () => {
     const today = new Date();
-    /*
-    let day = today.getDate();
-    let month = today.getMonth() + 1;
-    let year = today.getFullYear();
-    */
 
     const hourUni = unitude(today.getHours());
     const hourMulti = multi(today.getHours());
@@ -55,7 +50,7 @@ const timer = () => {
     const secondMulti = multi(today.getSeconds());
 
     for(let w = 0; w < document.getElementsByClassName("eight").length; w++){
-        document.getElementsByClassName("eight")[w].style.backgroundColor = " rgb(199, 52, 52)";
+        document.getElementsByClassName("eight")[w].style.backgroundColor = "rgb(255, 54, 54)";
     }
 
     color(document.getElementById("hourMulti").getElementsByClassName(count(hourMulti)));
