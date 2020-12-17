@@ -1,6 +1,6 @@
 const color = (st) => {
     for(let i = 0; i < st.length; i++){
-        st[i].style.backgroundColor = "rgb(19, 9, 114)";
+        st[i].style.backgroundColor = "rgb(255, 255, 0)";
     }
 }
 
@@ -39,6 +39,36 @@ const count = (number) =>{
     return name;
 }
 
+let tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+
+let firstScriptTag = document.getElementsByTagName('script')[0];
+
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        height: '0',
+        width: '0',
+        videoId: '__oO8CP-t_g',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+      function onPlayerReady(event) {
+        event.target.playVideo();
+    
+        player.seekTo(40, allowSeekAhead=true);
+      }
+      function onPlayerStateChange(event) {
+          player.setVolume(20);
+      }
+
 const timer = () => {
     const today = new Date();
 
@@ -50,7 +80,7 @@ const timer = () => {
     const secondMulti = multi(today.getSeconds());
 
     for(let w = 0; w < document.getElementsByClassName("eight").length; w++){
-        document.getElementsByClassName("eight")[w].style.backgroundColor = "rgb(255, 54, 54)";
+        document.getElementsByClassName("eight")[w].style.backgroundColor = "rgb(120, 110, 110)";
     }
 
     color(document.getElementById("hourMulti").getElementsByClassName(count(hourMulti)));
